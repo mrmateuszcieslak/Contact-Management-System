@@ -34,7 +34,7 @@ The application allows to:
 Logging in 
 - The login form available on the contact.html page allows the user to access the 
 to the application after entering the correct credentials. After correct 
-login, the user is redirected to the main contact management panel. 
+login, the user is redirected to the main contact management panel
 contacts. 
 
 Managing contacts

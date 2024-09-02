@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Management System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
+	
+    <link rel="stylesheet" href="css/styles.css"> 
+</head>
+<body>
+
+<div id="login-container">
+    <h2>Login</h2>
+    <form id="login-form">
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <button type="submit">Login</button>
+    </form>
+</div>
+
+<div id="main-container">
+    <header>
+        <h1 id="welcome-message"></h1>
+        <button id="signout_button">Sign Out</button>
+    </header>
+
+    <section id="contacts-section">
+        <h2>Contacts</h2>
+        <form id="contact-form">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="contact-email" name="email" required>
+            </div>
+            <div>
+                <label for="company">Company:</label>
+                <input type="text" id="company" name="company">
+            </div>
+            <div>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div>
+                <label for="notes">Notes:</label>
+                <textarea id="notes" name="notes"></textarea>
+            </div>
+            <div>
+                <label for="reminder-date">Reminder Date:</label>
+                <input type="text" id="reminder-date" name="reminder-date" required>
+            </div>
+            <div>
+                <label for="reminder-time">Reminder Time:</label>
+                <select id="reminder-time" name="reminder-time" required></select>
+            </div>
+            <button type="submit">Add Contact</button>
+        </form>
+
+        <ul id="contacts-list"></ul>
+    </section>
+
+    <section id="calendar-section">
+        <h2>Calendar</h2>
+        <div id="calendar"></div>
+    </section>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.js"></script>
+<script src="js/contact.js"></script>
+</body>
+</html>
